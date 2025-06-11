@@ -1,16 +1,17 @@
-// n
-
-import { ReactFlow } from "@xyflow/react";
-import type { Node } from "@xyflow/react";
-
-import "@xyflow/react/dist/style.css";
-
-const nodes: Node[] = [{ id: "a", data: { label: "Foo" } }];
+import { ReactflowMindmap } from "./reactflow/Normal";
 
 function App() {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <ReactFlow nodes={nodes} edges={initialEdges} />
+    <div className="grid grid-cols-2 grid-rows-2 w-full h-full">
+      <div className="border-r border-b border-gray-200">
+        <ReactflowMindmap />
+      </div>
+
+      <div>a</div>
+
+      <div>b</div>
+
+      <div>c</div>
     </div>
   );
 }
