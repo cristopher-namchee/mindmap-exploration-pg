@@ -12,6 +12,8 @@ import type { Node, Edge } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { useCallback } from "react";
 
+// 1 Dependency
+
 const initialNodes: Node[] = [
   {
     id: "root",
@@ -96,11 +98,11 @@ const initialEdges: Edge[] = [
  * Pane
  *
  * Bad positioning controls
- * Bayar gan
+ * Bayar gan, recalc
  */
 
 export function ReactflowMindmap() {
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+  const [nodes, _, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
   const onConnect = useCallback(

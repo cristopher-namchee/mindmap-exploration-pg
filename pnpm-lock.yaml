@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@mind-elixir/node-menu':
+        specifier: ^1.0.5
+        version: 1.0.5(mind-elixir@4.6.0)
       '@xyflow/react':
         specifier: ^12.6.4
         version: 12.6.4(@types/react@19.1.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      mind-elixir:
+        specifier: ^4.6.0
+        version: 4.6.0
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -372,6 +378,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@mind-elixir/node-menu@1.0.5':
+    resolution: {integrity: sha512-tlw85nwtfEoF47mLecRSMkcNW6D9ScDyg1YI+InZKtSgsvvnEm72kOyksp8B1haLk2ctVMFPJ7ay84MtWgrBGQ==}
+    peerDependencies:
+      mind-elixir: '>4.4.1'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1137,6 +1148,9 @@ packages:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
+  mind-elixir@4.6.0:
+    resolution: {integrity: sha512-svl/YkKaIR8vsKhdgA0YRmGCWlVUgyYfUrDIFfnmL599CJDkw5f1gygwbQN8uDyRIRXNl8LZLUqEZmwmxXAPsg==}
+
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
@@ -1681,6 +1695,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@mind-elixir/node-menu@1.0.5(mind-elixir@4.6.0)':
+    dependencies:
+      mind-elixir: 4.6.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2420,6 +2438,8 @@ snapshots:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
+
+  mind-elixir@4.6.0: {}
 
   minimatch@3.1.2:
     dependencies:
