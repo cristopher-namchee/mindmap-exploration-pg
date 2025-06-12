@@ -92,6 +92,7 @@ export function Mindelixir() {
     );
   }
 
+  // No native element
   useEffect(() => {
     const instance = new MindElixir({
       el: "#mm",
