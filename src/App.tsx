@@ -1,4 +1,5 @@
 import { Drawflow } from "./Drawflow";
+import { JSMind } from "./JSMind";
 import { Mindelixir } from "./MindElixir";
 import { ReactflowMindmap } from "./Reactflow";
 
@@ -45,7 +46,18 @@ function App() {
         <Drawflow />
       </div>
 
-      <div>c</div>
+      <div className="relative">
+        <p className="absolute top-2 right-2 z-20 text-xs text-indigo-500">
+          <a
+            href="https://github.com/hizzgdev/jsmind"
+            target="_blank"
+            rel="noopener noreferer"
+          >
+            JSMind
+          </a>
+        </p>
+        <JSMind />
+      </div>
     </div>
   );
 }

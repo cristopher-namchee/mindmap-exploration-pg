@@ -13,6 +13,21 @@ root.nodeData = {
         {
           topic: "Smart Quality Engine",
           id: "smart-quality-engine",
+          children: [
+            {
+              id: "llm",
+              topic:
+                "LLM-based Metrics (Hallucination, Completeness, Redundancy)",
+            },
+            {
+              id: "retrieval",
+              topic: "Retrieval Metrics (Recall, Precision)",
+            },
+            {
+              id: "agent",
+              topic: "Agent Metrics (Tool-Invocation Accuracy)",
+            },
+          ],
         },
         {
           topic: "Developer Access Kit",
@@ -64,8 +79,10 @@ const darkTheme = {
     "#CB0404",
   ],
   cssVar: {
+    "--main-color": "#FAFAFA",
     "--main-bgcolor": "#121212",
     "--bgcolor": "#040404",
+    "--color": "#FAFAFA",
   },
 };
 
